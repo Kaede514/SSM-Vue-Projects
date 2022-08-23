@@ -1,0 +1,20 @@
+SSM + Vue项目流程
+1、在pom.xml中配置所需依赖，然后用Maven加载依赖
+2、在模块设置中的模块-Web设置配置文件路径src\main\webapp\WEB-INF\web.xml
+3、数据库创建表，建立pojo实体类
+4、配置web.xml，创建static/css js 和 WEB-INF/templates，导入所需文件（依据前后端是否分离决定）
+5、创建SpringMVC的配置文件并搭建，创建controller、service及impl
+6、创建jdbc.properties，配置当前要操作的数据库
+7、创建Spring的配置文件并搭建
+8、配置Mybatis的配置文件并搭建，创建mapper接口及映射文件
+9、配置事务管理，拦截器
+10、编写代码
+11、Tomcat上部署运行
+
+
+前后端分离流程：
+1、根据需求定好接口文档
+2、前端做页面
+3、后台做逻辑
+4、做测试
+5、打包部署上线
